@@ -8,10 +8,11 @@ import { Document, Page, pdfjs } from "react-pdf";
 import "react-pdf/dist/esm/Page/AnnotationLayer.css";
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
 
-const resumeLink ="https://github.com/hollamik/hollamikresume08/blob/main/hollamik%20resume08.pdf";
+const resumeLink =
+  "https://raw.githubusercontent.com/hollamik/portfolio/main/src/Assets/hollamikresume08.pdf";
 
 function ResumeNew() {
-  const [width, setWidth] = useState(1300);
+  const [width, setWidth] = useState(1000);
 
   useEffect(() => {
     setWidth(window.innerWidth);
